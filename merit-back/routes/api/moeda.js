@@ -27,28 +27,35 @@ let extrato = [
     data_movimentacao: '2019-08-03',
     tipo_movimentacao: 'RESGATE', //TRANSFERENCIA, CREDITO, RESGATE
     historico: 'RESGATE PREMIO: PS4',
-    valor: 110
+    valor: -110
    },
 ];
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('moeda');
+  res.json(extrato);
+});
+
+/* GET users listing. */
+router.get('/:usr', function(req, res, next) {
+  const usr = req.params.usr;
+  console.log(usr);
+  const result = extrato.find( ext => ext.usr == usr)
+  res.send(result);
 });
 
 //solicitar credito mensal 100und
-router.get('/', function(req, res, next) {
+//router.get('/', function(req, res, next) {
   //verificar se usr já solicitou crédito no mes atual
   //chamar método de transferencia do usr = 0 (cofre) origem para usr logado destino
   //metodo_transferencia
-  res.send('moeda');
-});
+  //res.send('moeda');
+//});
 
 //listar movimento do perido
 //filtro de data e retornar obj com id trans, data, tipo movim, valor
 //Metodo com periodo inicial e periodo final
 
 //retornar saldo atual do usr logado
-
 
 module.exports = router;
