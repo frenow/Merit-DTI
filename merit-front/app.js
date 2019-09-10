@@ -5,14 +5,14 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var passport = require('passport');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var loginRouter = require('./routes/login');
-var logoutRouter = require('./routes/logout');
-var authRouter = require('./routes/auth');
-var profileRouter = require('./routes/profile');
+const indexRouter = require('./routes/index');
+const loginRouter = require('./routes/login');
+const logoutRouter = require('./routes/logout');
+const authRouter = require('./routes/auth');
+const profileRouter = require('./routes/profile');
 
 var app = express();
+require('./configs/github.strategy');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -30,10 +30,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/auth', authRouter);
 app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);
+app.use('/auth', authRouter);
 app.use('/profile', profileRouter);
 
 // catch 404 and forward to error handler

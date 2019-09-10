@@ -10,7 +10,7 @@ router.get('/', require('connect-ensure-login').ensureLoggedIn(),
     if(req.user.id === undefined){
         req.user = {id: req.user._json.steamid, displayName: req.user._json.personaname};
     }
-    console.log('usuario: '+req.user);
+    console.log({...req.user});
     res.render('profile', { profile: req.user});
 }
 
