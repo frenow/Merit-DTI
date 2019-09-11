@@ -10,6 +10,7 @@ const loginRouter = require('./routes/login');
 const logoutRouter = require('./routes/logout');
 const authRouter = require('./routes/auth');
 const profileRouter = require('./routes/profile');
+const saldoRouter = require('./routes/saldo');
 
 var app = express();
 require('./configs/github.strategy');
@@ -34,6 +35,7 @@ app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);
 app.use('/auth', authRouter);
 app.use('/profile', profileRouter);
+app.use('/saldo', saldoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

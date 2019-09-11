@@ -16,11 +16,11 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Profile</a></li>
-      <li><a href="#">Saldo</a></li>
-      <li><a href="#">Depósito</a></li>
-      <li><a href="#">Saque</a></li>
-      <li><a href="#">Resgate</a></li>
-      <li><a href="#">Sobre</a></li>      
+      <li><a href="/saldo">Saldo</a></li>
+      <li><a href="/deposito">Depósito</a></li>
+      <li><a href="/saque">Saque</a></li>
+      <li><a href="/resgate">Resgate</a></li>
+      <li><a href="/about">Sobre</a></li>      
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
@@ -31,7 +31,11 @@
 <h1>Ola, {{profile.displayName}}</h1>
 <h2>ID: {{profile.id}}</h2>
 <img src="" alt="">
-<br>
-<a href="/logout">(Logout)</a>
-  </body>
+<style>
+		body,
+		html {
+			background: #dbdbdb !important;
+		}
+</style>
+</body>
 </html>

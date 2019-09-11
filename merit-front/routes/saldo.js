@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', require('connect-ensure-login').ensureLoggedIn(),
+(req, res) => {
     res.render('saldo');
 });
 
