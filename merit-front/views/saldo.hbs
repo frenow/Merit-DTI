@@ -1,8 +1,10 @@
 <html>
 <head>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 <!------ Include the above in your HEAD tag ---------->
 </head>
 <body>
@@ -15,7 +17,7 @@
       <li><a href="/profile">Profile</a></li>
       <li class="active"><a href="/saldo">Saldo</a></li>
       <li><a href="/deposito">Depósito</a></li>
-      <li><a href="/saque">Saque</a></li>
+      <li><a href="/retirada">Retirada</a></li>
       <li><a href="/resgate">Resgate</a></li>
       <li><a href="/about">Sobre</a></li>      
     </ul>
@@ -24,141 +26,24 @@
     </ul>    
   </div>
 </nav>  
-<div class="container">
-    <div class="row">
-        <div class="col-xs-10">
-            <div class="panel panel-default">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h2 class="panel-title">
-                        Accounts and transactions report
-                    </h2>
-                </div>
-                <div class="panel-body">
-                    <h3>
-                        José da Silva
-                    </h3>
-                </div>
-                    <ul class="list-group">
-                    
-                    <li class="list-group-item">
-                    <h4>Account # 1364672 (current debit:: $356.61)</h4>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Operation date</th>
-                                <th>Remitter</th>
-                                <th>Beneficiary</th>
-                                <th>Amount</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Wed Nov 12 17:43:13 MSK 2014</td>
-                                <td>Smith J. (cash in)</td>
-                                <td>Jonex A.</td>
-                                <td>356.61</td>
-                                <td>Iniital deposit</td>
-                            </tr>
-                            <tr>
-                                <td>Wed Nov 13 12:41:13 MSK 2014</td>
-                                <td>Suzarland TJ.</td>
-                                <td>Smith J.</td>
-                                <td>2000.00</td>
-                                <td>Reward</td>
-                            </tr>
-                            <tr>
-                                <td>Wed Nov 15 07:43:13 MSK 2014</td>
-                                <td>Smith J.</td>
-                                <td>Smith M.</td>
-                                <td>100.00</td>
-                                <td>funds transfer</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </li>
-               
-                    <li class="list-group-item">
-                    <h4>Account # 1364672 (current debit:: $356.61)</h4>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Operation date</th>
-                                <th>Remitter</th>
-                                <th>Beneficiary</th>
-                                <th>Amount</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Wed Nov 12 17:43:13 MSK 2014</td>
-                                <td>Smith J. (cash in)</td>
-                                <td>Jonex A.</td>
-                                <td>356.61</td>
-                                <td>Iniital deposit</td>
-                            </tr>
-                            <tr>
-                                <td>Wed Nov 13 12:41:13 MSK 2014</td>
-                                <td>Suzarland TJ.</td>
-                                <td>Smith J.</td>
-                                <td>2000.00</td>
-                                <td>Reward</td>
-                            </tr>
-                            <tr>
-                                <td>Wed Nov 15 07:43:13 MSK 2014</td>
-                                <td>Smith J.</td>
-                                <td>Smith M.</td>
-                                <td>100.00</td>
-                                <td>funds transfer</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </li>
-                    
-                    <li class="list-group-item">
-                    <h4>Account # 1364672 (current debit:: $356.61)</h4>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Operation date</th>
-                                <th>Remitter</th>
-                                <th>Beneficiary</th>
-                                <th>Amount</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Wed Nov 12 17:43:13 MSK 2014</td>
-                                <td>Smith J. (cash in)</td>
-                                <td>Jonex A.</td>
-                                <td>356.61</td>
-                                <td>Iniital deposit</td>
-                            </tr>
-                            <tr>
-                                <td>Wed Nov 13 12:41:13 MSK 2014</td>
-                                <td>Suzarland TJ.</td>
-                                <td>Smith J.</td>
-                                <td>2000.00</td>
-                                <td>Reward</td>
-                            </tr>
-                            <tr>
-                                <td>Wed Nov 15 07:43:13 MSK 2014</td>
-                                <td>Smith J.</td>
-                                <td>Smith M.</td>
-                                <td>100.00</td>
-                                <td>funds transfer</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css" rel="stylesheet"/>
+
+<table data-toggle="table" data-url="https://api.coincap.io/v2/markets" data-sort-name="priceUsd" data-pagination="true" data-search="true">
+<thead> 
+<tr> 
+<th data-field="baseId" data-sortable="true"> Name </th> 
+<th data-field="priceUsd" data-sortable="true"> Price </th> 
+<th data-field="volumeUsd24Hr" data-sortable="true"> Volume24H </th> 
+<th data-field="quoteId" data-sortable="true"> Description </th> 
+</tr>
+</thead>
+</table>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+
 <style>
 		body,
 		html {
