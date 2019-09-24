@@ -44,5 +44,20 @@
     <h1>Portal Merit-Coin</h1>
     <a href="/login" class="btn btn-info btn-lg">
           <span class="glyphicon glyphicon-log-in"></span> Login </a>
+		  
+		  
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful');
+    }, function(err) {
+      // Registration failed
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
   </body>
 </html>
