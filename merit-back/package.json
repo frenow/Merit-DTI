@@ -3,19 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "knex": "./node_modules/.bin/knex"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "hbs": "~4.0.4",
-    "http-errors": "~1.6.3",
-    "knex": "^0.19.2",
-    "morgan": "~1.9.1",
-    "passport": "^0.4.0",
-    "passport-github": "^1.1.0",
-    "sqlite3": "^4.1.0"
+    "hbs": "^4.0.6",
+    "morgan": "^1.9.1"
   }
 }
